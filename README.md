@@ -1,1 +1,1 @@
-# cs341-contacts
+# CS341 Project
