@@ -10,8 +10,8 @@ const initializeDb = async (callback) => {
     }
 
     try {
-        await client.connect(process.env.MONGODB_URI);
-        _db = client.db(process.env.DB_NAME);
+        const connection = await client.connect(process.env.MONGODB_URI);
+        _db = connection.db(process.env.DB_NAME);
         callback(null, _db);
     } catch (error) {
         callback(error);
