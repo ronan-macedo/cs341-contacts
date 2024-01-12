@@ -7,3 +7,7 @@ GET {{host_uri}}/contact
 GET {{host_uri}}/contact/:id
 
 ###
+
+GET {{host_uri}}/
+
+###
