@@ -4,6 +4,6 @@ GET {{host_uri}}/contact
 
 ###
 
-GET {{host_uri}}/contact/65a05dd9604088ad0ec82c2d
+GET {{host_uri}}/contact/:id
 
 ###
