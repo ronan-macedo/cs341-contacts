@@ -5,9 +5,9 @@ const initinitializeDb = require('./database/connection').initializeDb;
 const app = express();
 const port = process.env.PORT || 5500;
 
-initinitializeDb((err) => {
-  if (err) {
-    console.log(err);
+initinitializeDb((error) => {
+  if (error) {
+    console.log(error);
     process.exit(1);
   } else {
     app.use(bodyParser.json());
