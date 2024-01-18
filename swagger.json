@@ -5,7 +5,7 @@
     "description": "Contacts Endpoints",
     "version": "1.0.0"
   },
-  "host": "localhost:5500",
+  "host": "https://cs341-contacts.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
