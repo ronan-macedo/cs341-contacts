@@ -5,10 +5,10 @@
     "description": "Contacts Endpoints",
     "version": "1.0.0"
   },
-  "host": "https://cs341-contacts.onrender.com",
+  "host": "cs341-contacts.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
