@@ -1,0 +1,43 @@
+@host_uri = http://localhost:5500
+
+GET {{host_uri}}/contact
+
+###
+
+POST {{host_uri}}/contact
+Content-Type: application/json
+
+{
+    "firstName": "Diana",
+    "lastName": "Prince",
+    "email": "diana.prince@themyscira.com",
+    "favoriteColor": "Blue",
+    "birthday": "3000 BC"
+}
+
+###
+
+PUT {{host_uri}}/contact/65a86f6974a7dad7062edfbc
+Content-Type: application/json
+
+{
+    "firstName": "Barry",
+    "lastName": "Allen",
+    "email": "barry.allen@centralcitypolice.com",
+    "favoriteColor": "Red",
+    "birthday": "1989-03-19"
+}
+
+###
+
+GET {{host_uri}}/contact/65a8747d7aaceb61d2c91eab
+
+###
+
+DELETE  {{host_uri}}/contact/65a8747d7aaceb61d2c91eab
+
+###
+
+GET {{host_uri}}/
+
+###
