@@ -35,7 +35,7 @@ contactController.createContact = async (req, res) => {
             email: req.body.email,
             favoriteColor: req.body.favoriteColor,
             birthday: req.body.birthday,
-        }
+        };
         const response = await contactModel.createContact(contact);
 
         if (response.acknowledged) {
@@ -58,11 +58,11 @@ contactController.updateContact = async (req, res) => {
             email: req.body.email,
             favoriteColor: req.body.favoriteColor,
             birthday: req.body.birthday,
-        }
+        };
         const response = await contactModel.updateContact(contactId, contact);
 
         if (response.matchedCount > 0) {
-            res.status(204).send();
+            res.status(200).send();
             return;
         }
 

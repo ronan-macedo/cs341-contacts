@@ -38,6 +38,6 @@ DELETE  {{host_uri}}/contact/65a8747d7aaceb61d2c91eab
 
 ###
 
-GET {{host_uri}}/
+GET {{host_uri}}/banana
 
 ###
